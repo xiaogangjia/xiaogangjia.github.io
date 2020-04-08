@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xiaogang Jia"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Xiaogang Jia"
 description              : &description "Master at HIT"
