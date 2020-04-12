@@ -15,5 +15,5 @@ At present, I want to apply for a PhD position to further my study. In addition,
 For more info
 ------
 [Publications](https://xiaogangjia.github.io//publications/)
-[Projects](https://xiaogangjia.github.io//portfolio/)
+[Projects and Demos](https://xiaogangjia.github.io//portfolio/)
 [CV](https://xiaogangjia.github.io//cv/)
