@@ -86,8 +86,8 @@ author:
   location         : "Harbin"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : #"18846827115@163.com"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  email            : "xiaogangjia_hit@outlook.com"
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
