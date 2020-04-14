@@ -18,4 +18,4 @@ For more info
 
 [Projects and Demos](https://xiaogangjia.github.io//portfolio/)
 
-[CV](https://xiaogangjia.github.io/files/paper1.pdf)
+[CV](/files/jia.pdf)

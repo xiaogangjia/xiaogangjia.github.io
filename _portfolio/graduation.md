@@ -1,5 +1,5 @@
 ---
 title: "Intelligent Monitoring System for Belt Conveyor"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "detection for coal piling, smoke, fire and person <br/><img src='/files/coal.png'>"
 collection: portfolio
 ---
