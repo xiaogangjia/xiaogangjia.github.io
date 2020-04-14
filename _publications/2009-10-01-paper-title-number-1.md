@@ -1,10 +1,18 @@
 ---
-title: "Paper Title Number 1"
+title: "A Modified CenterNet for Crack Detection of Sanitary Ceramics"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+conf: 'International Conference on Computer Vision'
+conf_shortname: 'ICCV'
+year: 2019
+author: <strong>Wenwei Zhang</strong>, Hui Zhou, Shuyang Sun, Zhe Wang, Jianping Shi, Chen Change Loy
+codeurl: https://github.com/ZwwWayne/mmMOT
+paperurl: https://arxiv.org/abs/1909.03850
+projecturl: https://github.com/ZwwWayne/mmMOT
+posterlink: /files/mmMOT_poster_final.pdf
+additional: true
+
+# venue: 'Journal 1'
+# paperurl: 'https://dl.acm.org/citation.cfm?id=3240553'
+# citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
