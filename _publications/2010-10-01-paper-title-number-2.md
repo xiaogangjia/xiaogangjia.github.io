@@ -9,7 +9,7 @@ author: <strong>Xiaogang Jia</strong>, Xianqiang Yang
 #codeurl: https://github.com/ZwwWayne/mmMOT
 #paperurl: https://arxiv.org/abs/1909.03850
 #projecturl: https://github.com/ZwwWayne/mmMOT
-paperurl: /files/ceramics.pdf
+paperurl: /files/jia.pdf
 additional: true
 
 # venue: 'Journal 1'
