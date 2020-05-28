@@ -1,15 +1,18 @@
 ---
-title: "Paper Title Number 3"
+title: "A Modified CenterNet for Crack Detection of Sanitary Ceramics"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+permalink: /publication/2009-10-01-paper-title-number-2
+conf: 'Annual Conference of the IEEE Industrial Electronics Society'
+conf_shortname: 'IECON'
+year: 2020
+author: <strong>Xiaogang Jia</strong>, Xianqiang Yang, Huijun Gao
+#codeurl: https://github.com/ZwwWayne/mmMOT
+#paperurl: https://arxiv.org/abs/1909.03850
+#projecturl: https://github.com/ZwwWayne/mmMOT
+paperurl: /files/centernet.pdf
+additional: true
+
+# venue: 'Journal 1'
+# paperurl: 'https://dl.acm.org/citation.cfm?id=3240553'
+# citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
-This paper is about the number 3. The number 4 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
-
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).

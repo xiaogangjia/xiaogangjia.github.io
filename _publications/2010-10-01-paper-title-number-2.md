@@ -1,15 +1,15 @@
 ---
-title: "A Modified CenterNet for Crack Detection of Sanitary Ceramics"
+title: "Scale-Adaptive NN-based Similarity for Robust Template Matching"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-2
-conf: 'Annual Conference of the IEEE Industrial Electronics Society'
-conf_shortname: 'IECON'
+conf: 'IEEE Transactions on Instrumentation and Measurement'
+#conf_shortname: 'IECON'
 year: 2020
-author: <strong>Xiaogang Jia</strong>, Xianqiang Yang
+author: Zhihao Zhang, Xianqiang Yang, <strong>Xiaogang Jia</strong>
 #codeurl: https://github.com/ZwwWayne/mmMOT
 #paperurl: https://arxiv.org/abs/1909.03850
 #projecturl: https://github.com/ZwwWayne/mmMOT
-paperurl: /files/jia.pdf
+#paperurl: /files/centernet.pdf
 additional: true
 
 # venue: 'Journal 1'
