@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Xiaogang Jia</title>
+    <link>https://xiaogangjia.github.io/post/</link>
+      <atom:link href="https://xiaogangjia.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xiaogangjia.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>https://xiaogangjia.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>INTERPRET trajectory prediction</title>
+      <link>https://xiaogangjia.github.io/post/sgan/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xiaogangjia.github.io/post/sgan/</guid>
+      <description>&lt;h2 id=&#34;interaction-challenge-in-cvpr-2020-workshop-scalability-in-autonomous-driving&#34;&gt;Interaction Challenge in CVPR 2020 workshop, &amp;ldquo;Scalability in Autonomous Driving&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sites.google.com/view/cvpr20-scalability/competitions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Workshop&lt;/a&gt;
+
+&lt;a href=&#34;http://challenge.interaction-dataset.com/leader-board&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leaderboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I ranked &lt;code&gt;5th&lt;/code&gt; in the regular track and ranked &lt;code&gt;1st&lt;/code&gt; for metric of MON.&lt;/p&gt;
+&lt;h2 id=&#34;experiments-on-interaction-and-argoverse&#34;&gt;Experiments on Interaction and Argoverse&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://xiaogangjia.github.io/files/report.pdf&#34;&gt;Report&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The key method of &lt;code&gt;Social-Gan&lt;/code&gt;, &lt;code&gt;Pooling Module&lt;/code&gt;, computes relative positions between the ego one and all other people. However, this pattern may not work well in the motion prediction for
+autonomous driving, because for an ego vehicle, not all other vehicles contribute to
+its motion planning. In order to verify the influence of the Pooling Module, we have conducted several experiments on the &lt;code&gt;Interaction&lt;/code&gt; dataset and &lt;code&gt;Argoverse&lt;/code&gt; dataset. All the results have been reported in a file with the Report link.&lt;/p&gt;
+&lt;h2 id=&#34;idea-visualization&#34;&gt;Idea Visualization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Latest: predict trajectories of surrounding cars given the future trajectories of ego vehicle (conditional information)
+&lt;img src=&#34;./vis1.png&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A new pooling module that defines an effective field of view for ego car
+&lt;img src=&#34;./vis2.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Combine the information of lanes in a bird-view pattern
+&lt;img src=&#34;./vis3.png&#34; alt=&#34;3&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Object Detection in Aerial Images</title>
+      <link>https://xiaogangjia.github.io/post/visdrone/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://xiaogangjia.github.io/post/visdrone/</guid>
+      <description>&lt;h2 id=&#34;visdrone-challenge-in-eccv-2020-workshop&#34;&gt;VisDrone Challenge in ECCV 2020 workshop&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aiskyeye.com/leaderboard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leaderboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I achieved an AP of 22.72% in the object detection challenge.&lt;/p&gt;
+&lt;h2 id=&#34;details&#34;&gt;Details&lt;/h2&gt;
+&lt;p&gt;Here I proposed a &lt;code&gt;point-based&lt;/code&gt; network to localize objects in a low-resolution feature map. To save computational costs, I used &lt;code&gt;mobilenetv3&lt;/code&gt; to be the backbone. Then &lt;code&gt;K-Means&lt;/code&gt; is used as a post-processing method to generate high-quality clusters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./cluster.jpg&#34; alt=&#34;clusters&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Both original images and cropped images are processed by the detector. The detector is based on &lt;code&gt;CenterNet&lt;/code&gt; and &lt;code&gt;Hourglass-104&lt;/code&gt;. The model is initialized with weights pre-trained on MS COCO and I trained it for 30 epochs. In the end, all the predicted bounding boxes are merged by standard &lt;code&gt;NMS&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;test-on-challenge-set&#34;&gt;Test on challenge set&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;AP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;22.72%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;test-on-validation-set&#34;&gt;Test on validation set&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;AP&lt;/th&gt;
+&lt;th&gt;AP50&lt;/th&gt;
+&lt;th&gt;AP75&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;31.06%&lt;/td&gt;
+&lt;td&gt;54.69%&lt;/td&gt;
+&lt;td&gt;29.09%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Defect Detection for Sanitary Ceramics</title>
+      <link>https://xiaogangjia.github.io/post/defect/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://xiaogangjia.github.io/post/defect/</guid>
+      <description>&lt;h2 id=&#34;overview-of-the-detector&#34;&gt;Overview of the detector&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./net.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;backbone&#34;&gt;Backbone&lt;/h2&gt;
+&lt;p&gt;This work is based on &lt;code&gt;CenterNet&lt;/code&gt;. I simplified the original &lt;code&gt;ResNet18&lt;/code&gt; and the volume of the final model is 34.3MB. It also realized full-resolution prediction which is beneficial for point-based detection.
+&lt;img src=&#34;./backbone.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adaptive-feature-fusion&#34;&gt;Adaptive feature fusion&lt;/h2&gt;
+&lt;p&gt;I introduced an extra branch with shallow layers to strengthen the feature representation. Then an &lt;code&gt;adaptive feature fusion&lt;/code&gt; method is used to fuse main features with low-level features. This module was realized by a 1*1 conv layer and a softmax function, so that the network was able to learn the weights between deep-layer features and shallow-layer features.&lt;/p&gt;
+&lt;h2 id=&#34;experiment-on-the-validation-set&#34;&gt;Experiment on the validation set&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;AP50&lt;/th&gt;
+&lt;th&gt;Volume&lt;/th&gt;
+&lt;th&gt;FPS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;96.16%&lt;/td&gt;
+&lt;td&gt;34.3MB&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intelligent Monitoring System for Belt Conveyor</title>
+      <link>https://xiaogangjia.github.io/post/yingyingying/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://xiaogangjia.github.io/post/yingyingying/</guid>
+      <description>&lt;h2 id=&#34;tasks&#34;&gt;Tasks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Original &lt;code&gt;YOLOv3&lt;/code&gt; with official pre-trained weights is used to detect workers. &lt;code&gt;YOLOv3&lt;/code&gt; with modified anchors is used to detect smoke and fire.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mask-RCNN&lt;/code&gt; is used to segment the coal region in a pre-defined area. I also find that a simple &lt;code&gt;U-Net&lt;/code&gt; can perform very well.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;demos&#34;&gt;Demos&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./seg.gif&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;./smoke.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ps&#34;&gt;P.S.&lt;/h2&gt;
+&lt;p&gt;For some reason, all models here are not reported with metrics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>License Plate Recognition in Natural Scenes</title>
+      <link>https://xiaogangjia.github.io/post/lp/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://xiaogangjia.github.io/post/lp/</guid>
+      <description>&lt;h2 id=&#34;pipeline&#34;&gt;Pipeline&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Original &lt;code&gt;YOLOv2&lt;/code&gt; with VOC pre-trained weights is used to detect all cars in the image.&lt;/li&gt;
+&lt;li&gt;A novel &lt;code&gt;CNN&lt;/code&gt; is proposed to predict a set of &lt;code&gt;affine transformation&lt;/code&gt; parameters which are used to extract the area of license plates. Then a &lt;code&gt;perspective transformation&lt;/code&gt; is applied to rectify the distorted license plates.&lt;/li&gt;
+&lt;li&gt;Simplify the backbone of YOLOv2 to detect characters in the rectified regions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;experiment&#34;&gt;Experiment&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;TP&lt;/th&gt;
+&lt;th&gt;Accuracy&lt;/th&gt;
+&lt;th&gt;FPS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;189&lt;/td&gt;
+&lt;td&gt;94.5%&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;examples-for-dataset&#34;&gt;Examples for dataset&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./car.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;authentic-lps-and-synthesized-lps&#34;&gt;authentic LPs and synthesized LPs&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./true.png&#34; alt=&#34;true&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./fake.png&#34; alt=&#34;fake&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
